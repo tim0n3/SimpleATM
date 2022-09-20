@@ -83,7 +83,7 @@ public class CardHolder
         {
             Console.WriteLine("How much $$ would you like to deposit: ");
             double deposit = Double.Parse(Console.ReadLine());
-            currentUser.setBalance(deposit);
+            currentUser.setBalance(currentUser.getBalance() + deposit);
             Console.WriteLine("Thank you for you $$. Your new balance is: " + currentUser.getBalance());
         }
 

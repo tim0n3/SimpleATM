@@ -101,8 +101,6 @@ public class CardHolder
                 currentUser.setBalance(currentUser.getBalance() - withdrawl);
                 Console.WriteLine("You're good to go! Thank you :)");
             }
-            currentUser.getBalance(withdraw);
-            Console.WriteLine("1. Deposit" + currentUser.getBalance);
         }
 
         void balance(CardHolder currentUser)
@@ -154,7 +152,7 @@ public class CardHolder
             try
             {
                 userPin = int.Parse(Console.ReadLine());
-                if (currentUser.getPin() = userPin)
+                if (currentUser.getPin() == userPin)
                 {
                     break;
                 }
@@ -188,7 +186,8 @@ public class CardHolder
                 }
                 else if (option == 2)
                 {
-                    withdraw(currentUser, depositCardNum);
+                    object depositCardNum = null;
+                    withdraw(currentUser);
                 }
                 else if (option == 3)
                 {
